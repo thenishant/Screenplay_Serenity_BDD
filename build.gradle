@@ -21,7 +21,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    testImplementation ('net.serenity-bdd:serenity-core:2.0.77')  {
+    testImplementation('net.serenity-bdd:serenity-core:2.0.77') {
         exclude group: "io.cucumber", module: "cucumber-core"
     }
     testImplementation('net.serenity-bdd:serenity-cucumber4:1.0.21')
@@ -38,6 +38,8 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.5.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
     testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.5.2")
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.8.0-beta4'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.8.0-beta4'
 }
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate)
