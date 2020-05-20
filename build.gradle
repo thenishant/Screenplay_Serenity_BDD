@@ -24,22 +24,12 @@ dependencies {
     testImplementation('net.serenity-bdd:serenity-core:2.0.77') {
         exclude group: "io.cucumber", module: "cucumber-core"
     }
-    testImplementation('net.serenity-bdd:serenity-cucumber4:1.0.21')
-    testImplementation('net.serenity-bdd:serenity-screenplay:2.0.77')
-    testImplementation('net.serenity-bdd:serenity-screenplay-webdriver:2.0.77')
-    testImplementation('net.serenity-bdd:serenity-screenplay-rest:2.0.77')
-    testImplementation('net.serenity-bdd:serenity-ensure:2.0.77')
-    testImplementation('net.serenity-bdd:serenity-assertions:2.0.77')
-
-    testImplementation('io.cucumber:cucumber-java:4.2.0')
-    testImplementation('io.cucumber:cucumber-junit:4.2.0')
-    testImplementation('org.assertj:assertj-core:3.8.0')
-
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.5.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.5.2")
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.8.0-beta4'
-    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.8.0-beta4'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.2.5'
+    testImplementation('net.serenity-bdd:serenity-screenplay-webdriver:2.2.5')
+    testImplementation('net.serenity-bdd:serenity-screenplay-rest:2.2.5')
+    testImplementation('net.serenity-bdd:serenity-ensure:2.2.5')
+    testImplementation('net.serenity-bdd:serenity-assertions:2.2.5')
 }
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate)
