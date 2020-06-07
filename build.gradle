@@ -24,12 +24,10 @@ dependencies {
     testImplementation('net.serenity-bdd:serenity-core:2.0.77') {
         exclude group: "io.cucumber", module: "cucumber-core"
     }
-    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay
-    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.2.5'
-    testImplementation('net.serenity-bdd:serenity-screenplay-webdriver:2.2.5')
-    testImplementation('net.serenity-bdd:serenity-screenplay-rest:2.2.5')
-    testImplementation('net.serenity-bdd:serenity-ensure:2.2.5')
-    testImplementation('net.serenity-bdd:serenity-assertions:2.2.5')
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.2.9'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.2.9'
+    compile group: 'net.serenity-bdd', name: 'serenity-ensure', version: '2.2.9'
+    compile group: 'net.serenity-bdd', name: 'serenity-assertions', version: '2.2.9'
 }
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate)
