@@ -20,7 +20,7 @@ public class TrainFormPage extends PageObject {
 
     public static Target DEPART_DATE = tomorrowsDate();
 
-    public static Target SEARCH_FLIGHTS = Target.the("Search flight")
+    public static Target SEARCH_TICKETS = Target.the("Search flight")
             .located(By.cssSelector("button[data-test='submit-journey-search-button'"));
 
     public static Target tomorrowsDate() {

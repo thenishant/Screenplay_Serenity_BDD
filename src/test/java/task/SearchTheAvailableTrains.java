@@ -31,7 +31,7 @@ public class SearchTheAvailableTrains implements Task {
                 Enter.theValue(to).into(TrainFormPage.TO).thenHit(Keys.TAB),
                 Click.on(TrainFormPage.SELECT_DATE_PICKER),
                 Click.on(TrainFormPage.DEPART_DATE),
-                Click.on(TrainFormPage.SEARCH_FLIGHTS)
+                Click.on(TrainFormPage.SEARCH_TICKETS)
         );
     }
 

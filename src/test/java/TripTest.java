@@ -30,7 +30,6 @@ public class TripTest {
 
     @Test
     public void bookATrainTicket() {
-
         john.has(ChosenTo.bookATrainTicket());
 
         john.attemptsTo(SearchTheAvailableTrains.from(origin).to(destination));
@@ -40,5 +39,4 @@ public class TripTest {
                 seeThat("The destination station", TheResultSummary.destination(), equalTo(destination))
         );
     }
-
 }
